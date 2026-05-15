@@ -75,8 +75,6 @@ em { font-style: italic; }
 .nav-publisher {
   display: inline-flex;
   align-items: center;
-  padding-right: 18px;
-  border-right: 1px solid var(--rule-light);
   height: 36px;
   transition: opacity 0.2s, transform 0.2s;
 }
@@ -497,7 +495,6 @@ em { font-style: italic; }
 /* ---------- Responsive ---------- */
 @media (max-width: 800px) {
   .nav-links { display: none; }
-  .nav-publisher { padding-right: 12px; border-right: 1px solid var(--rule-light); }
   .nav-publisher img { height: 24px; }
   .two-col,
   .quote-grid,
