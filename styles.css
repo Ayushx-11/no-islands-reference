@@ -204,7 +204,9 @@ em { font-style: italic; }
   padding: 14px 16px 6px;
   background: var(--bg-light);
 }
+.panel-bare { background: transparent; }
 .section-dark .panel { background: #131313; }
+.section-dark .panel-bare { background: transparent; }
 .section-dark .panel figcaption { background: transparent; color: var(--muted-dark); }
 @media (max-width: 800px) {
   .panel { margin: 36px auto; border-radius: 10px; }
