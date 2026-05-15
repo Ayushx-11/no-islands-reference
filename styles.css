@@ -544,7 +544,8 @@ em { font-style: italic; }
 /* ---------- Responsive ---------- */
 @media (max-width: 800px) {
   .nav-links { display: none; }
-  .nav-inner { min-height: 60px; padding: 10px 20px; gap: 16px; }
+  .nav-inner { min-height: 60px; padding: 10px 20px; gap: 16px; justify-content: space-between; }
+  .nav-cta { margin-left: auto; }
   .nav-publisher img { height: 34px; margin: -3px 0; }
   .nav-cta { padding: 10px 16px; font-size: 11px; }
   .two-col,
