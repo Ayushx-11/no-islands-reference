@@ -75,14 +75,13 @@ em { font-style: italic; }
 .nav-publisher {
   display: inline-flex;
   align-items: center;
-  padding: 4px 12px;
-  border-left: 1px solid var(--rule-light);
+  padding-right: 18px;
   border-right: 1px solid var(--rule-light);
   height: 36px;
   transition: opacity 0.2s, transform 0.2s;
 }
 .nav-publisher img {
-  height: 28px;
+  height: 30px;
   width: auto;
   display: block;
 }
@@ -498,8 +497,8 @@ em { font-style: italic; }
 /* ---------- Responsive ---------- */
 @media (max-width: 800px) {
   .nav-links { display: none; }
-  .nav-publisher { padding: 2px 10px; border: none; }
-  .nav-publisher img { height: 22px; }
+  .nav-publisher { padding-right: 12px; border-right: 1px solid var(--rule-light); }
+  .nav-publisher img { height: 24px; }
   .two-col,
   .quote-grid,
   .character-card { grid-template-columns: 1fr; gap: 24px; }
