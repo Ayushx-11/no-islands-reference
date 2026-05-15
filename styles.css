@@ -481,6 +481,14 @@ em { font-style: italic; }
   color: var(--muted-light);
 }
 .character-sidebar { font-size: 14px; }
+.char-portrait {
+  margin: 0 0 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+.char-portrait img { display: block; width: 100%; height: auto; }
+.section-dark .char-portrait { background: #131313; }
 .stat-list {
   margin-top: 0;
 }
