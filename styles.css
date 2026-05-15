@@ -173,6 +173,26 @@ em { font-style: italic; }
   text-transform: none;
 }
 .image-slot-hero { min-height: 520px; margin-top: 64px; }
+
+.hero-cover {
+  margin: 64px auto 24px;
+  max-width: 620px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 0.55), 0 8px 20px -8px rgba(0, 0, 0, 0.25);
+  background: #0a0a0a;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hero-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero-cover:hover { transform: translateY(-4px); }
+
+@media (max-width: 800px) {
+  .hero-cover { margin: 40px auto 16px; border-radius: 10px; }
+}
 .image-slot-wide { min-height: 420px; }
 .image-slot-portrait { min-height: 360px; margin: 0 0 24px; }
 .image-slot-dark {
