@@ -27,6 +27,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 17px;
+  overflow-x: hidden;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -208,8 +209,23 @@ em { font-style: italic; }
 .section-dark .panel { background: #131313; }
 .section-dark .panel-bare { background: transparent; }
 .section-dark .panel figcaption { background: transparent; color: var(--muted-dark); }
+/* Full-bleed panel: breaks out of the 760px box + section padding,
+   spans the entire viewport edge to edge */
+.panel-full {
+  max-width: none;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 72px;
+  margin-bottom: 72px;
+  border-radius: 0;
+  background: transparent;
+  overflow: hidden;
+}
+.panel-full img { width: 100%; display: block; }
 @media (max-width: 800px) {
   .panel { margin: 36px auto; border-radius: 10px; }
+  .panel-full { margin-top: 44px; margin-bottom: 44px; border-radius: 0; }
 }
 .hero-cover img {
   display: block;
