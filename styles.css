@@ -405,6 +405,28 @@ em { font-style: italic; }
   max-width: 780px;
 }
 
+.closing-passage {
+  max-width: 760px;
+  margin: 88px auto 0;
+  text-align: center;
+}
+.closing-passage p {
+  font-family: var(--font-serif);
+  font-size: clamp(17px, 1.7vw, 21px);
+  line-height: 1.7;
+  color: var(--muted-light);
+  margin-bottom: 22px;
+}
+.section-dark .closing-passage p { color: var(--muted-dark); }
+.closing-passage .closing-kicker {
+  font-style: italic;
+  font-size: clamp(20px, 2.6vw, 28px);
+  color: var(--text-light);
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+.section-dark .closing-passage .closing-kicker { color: var(--text-dark); }
+
 /* ---------- Balance row (fortune vs suffering) ---------- */
 .balance-row {
   display: grid;
